@@ -6,7 +6,7 @@
 //
 
 extension Version: ExpressibleByStringLiteral {
-    init(stringLiteral: String) {
+    public init(stringLiteral: String) {
         self = Version(stringLiteral)
     }
 }

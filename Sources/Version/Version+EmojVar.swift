@@ -5,7 +5,7 @@
 //  Created by Leif on 5/6/21.
 //
 
-extension Version {
+public extension Version {
     var emojvar: String {
         [
             "\(major)".emojvar(type: .major),
@@ -16,13 +16,13 @@ extension Version {
     }
 }
 
-enum EmojVarType {
+public enum EmojVarType {
     case major
     case minor
     case patch
 }
 
-extension EmojVarType {
+public extension EmojVarType {
     var emojis: [Character: String] {
         zip(
             "0123456789",
@@ -43,7 +43,7 @@ extension EmojVarType {
     }
 }
 
-extension String {
+public extension String {
     func emojvar(type: EmojVarType) -> String {
         compactMap {
             type.emojis[$0]

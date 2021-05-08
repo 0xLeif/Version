@@ -6,7 +6,7 @@
 //
 
 extension Version: Comparable {
-    static func < (lhs: Version, rhs: Version) -> Bool {
+    public static func < (lhs: Version, rhs: Version) -> Bool {
         if lhs.major < rhs.major {
             return true
         } else if lhs.major > rhs.major {

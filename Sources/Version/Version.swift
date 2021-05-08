@@ -1,9 +1,9 @@
-struct Version: Equatable, Hashable, Codable {
-    var major: Int = 0
-    var minor: Int = 0
-    var patch: Int = 0
+public struct Version: Equatable, Hashable, Codable {
+    public var major: Int = 0
+    public var minor: Int = 0
+    public var patch: Int = 0
     
-    init(_ string: String) {
+    public init(_ string: String) {
         let parts = string.split(separator: ".")
         
         if parts.count > 0 {

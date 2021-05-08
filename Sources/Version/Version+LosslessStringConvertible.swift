@@ -6,7 +6,7 @@
 //
 
 extension Version: LosslessStringConvertible {
-    var description: String {
+    public var description: String {
         [major, minor, patch]
             .map(String.init)
             .joined(separator: ".")
